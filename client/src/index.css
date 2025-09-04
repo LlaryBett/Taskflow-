@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* WhatsApp Colors */
+  --color-whatsapp-primary: #25D366;
+  --color-whatsapp-secondary: #128C7E;
+  --color-whatsapp-tertiary: #34B7F1;
+  --color-whatsapp-dark: #075E54;
+  --color-whatsapp-light: #DCF8C6;
+  
+  /* WhatsApp Gray Scale */
+  --color-whatsapp-gray-50: #F8F9FA;
+  --color-whatsapp-gray-100: #F1F3F4;
+  --color-whatsapp-gray-200: #E8EAED;
+  --color-whatsapp-gray-300: #DADCE0;
+  --color-whatsapp-gray-400: #BDC1C6;
+  --color-whatsapp-gray-500: #9AA0A6;
+  --color-whatsapp-gray-600: #80868B;
+  --color-whatsapp-gray-700: #5F6368;
+  --color-whatsapp-gray-800: #3C4043;
+  --color-whatsapp-gray-900: #202124;
+  
+  /* Font Families */
+  --font-family-sans: Outfit, Poppins, Inter, system-ui, sans-serif;
+}
+
+* {
+  font-family: Outfit, Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #202124;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
