@@ -12,11 +12,11 @@ import {
 } from 'lucide-react';
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard', icon: Home },
-  { name: 'Projects', href: '/projects', icon: FolderOpen },
-  { name: 'Teams', href: '/teams', icon: Users },
-  { name: 'Calendar', href: '/calendar', icon: Calendar },
-  { name: 'My Tasks', href: '/my-tasks', icon: CheckSquare },
+  { name: 'Dashboard', href: '/app/dashboard', icon: Home },
+  { name: 'Projects', href: '/app/projects', icon: FolderOpen },
+  { name: 'Teams', href: '/app/teams', icon: Users },
+  { name: 'Calendar', href: '/app/calendar', icon: Calendar },
+  { name: 'My Tasks', href: '/app/my-tasks', icon: CheckSquare },
 ];
 
 const Sidebar = ({ onClose }) => {
@@ -66,7 +66,7 @@ const Sidebar = ({ onClose }) => {
       {/* User info */}
       <div className="flex-shrink-0 p-4 border-t border-gray-200">
         <NavLink
-          to="/profile"
+          to="/app/profile"
           className="group block w-full flex items-center space-x-3 p-3 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
         >
           <User className="h-5 w-5" />

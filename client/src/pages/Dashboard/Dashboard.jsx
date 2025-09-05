@@ -161,7 +161,7 @@ const Dashboard = () => {
                 <div
                   key={project.id}
                   className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer transition-colors"
-                  onClick={() => navigate(`/projects/${project.id}`)}
+                  onClick={() => navigate(`/app/projects/${project.id}`)}
                 >
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
@@ -192,7 +192,7 @@ const Dashboard = () => {
               ))}
             </div>
             <button
-              onClick={() => navigate('/projects')}
+              onClick={() => navigate('/app/projects')}
               className="w-full mt-4 flex items-center justify-center px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-sm font-medium text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
             >
               <Plus className="h-4 w-4 mr-2" />
@@ -207,7 +207,7 @@ const Dashboard = () => {
             <div className="flex justify-between items-center">
               <h3 className="text-lg font-semibold text-gray-900">Your Tasks</h3>
               <button
-                onClick={() => navigate('/my-tasks')}
+                onClick={() => navigate('/app/my-tasks')}
                 className="text-sm text-blue-600 hover:text-blue-800 font-medium transition-colors"
               >
                 View all
@@ -235,7 +235,7 @@ const Dashboard = () => {
               ))}
             </div>
             <button
-              onClick={() => navigate('/my-tasks')}
+              onClick={() => navigate('/app/my-tasks')}
               className="w-full mt-4 flex items-center justify-center px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-sm font-medium text-gray-600 hover:border-gray-400 hover:text-gray-900 transition-colors"
             >
               <Plus className="h-4 w-4 mr-2" />
@@ -250,21 +250,21 @@ const Dashboard = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <button
-            onClick={() => navigate('/projects')}
+            onClick={() => navigate('/app/projects')}
             className="flex flex-col items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
           >
             <FolderOpen className="h-8 w-8 text-blue-600 mb-2" />
             <span className="text-sm font-medium text-blue-900">New Project</span>
           </button>
           <button
-            onClick={() => navigate('/teams')}
+            onClick={() => navigate('/app/teams')}
             className="flex flex-col items-center p-4 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors"
           >
             <Users className="h-8 w-8 text-emerald-600 mb-2" />
             <span className="text-sm font-medium text-emerald-900">Invite Team</span>
           </button>
           <button
-            onClick={() => navigate('/calendar')}
+            onClick={() => navigate('/app/calendar')}
             className="flex flex-col items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors"
           >
             <Clock className="h-8 w-8 text-purple-600 mb-2" />
